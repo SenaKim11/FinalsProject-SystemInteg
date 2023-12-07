@@ -1,0 +1,36 @@
+.container {
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .x {
+    background-color: red;
+    color: white;
+  }
+  
+  .heart {
+    background-color: pink;
+    color: white;
+  }
+  
+  .hamburger {
+    background-color: black;
+    color: white;
+  }
+  
+  .star {
+    background-color: yellow;
+    color: black;
+  }
+  

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        .divdiv
+        {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-section {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 70%;
+            background-color: #666;
+        }
+
+        .search-icon,
+        .microphone-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .search-icon {
+            filter: invert(1);
+        }
+
+        input[type="text"] {
+            background-color: #666;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            flex-grow: 1;
+            width: 100%;
+            outline: none; /* Remove the input focus outline */
+        }
+
+        .microphone-icon {
+            filter: invert(1);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .message-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .message-item:hover {
+            background-color: #e5e5e5;
+        }
+
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .message-content {
+            flex-grow: 1;
+        }
+
+        .message-sender {
+            font-weight: bold;
+            color: white;
+        }
+
+        .message-preview {
+            color: #555;
+        }
+
+        .timestamp {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .matches-button {
+            background-color: #0583F2;
+            color: white;
+        }
+
+        .friends-button {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="divdiv">
+    <div>
+        <header>
+            <h1> MATCHES </h1>
+        </header>
+    
+        <div class="search-section">
+            <div class="search-bar">
+                <img src="search.png" alt="Search" class="search-icon">
+                <input type="text" placeholder="Search">
+                <img src="micro.png" alt="Microphone" class="microphone-icon">
+            </div>
+        </div>
+    
+        <main>
+            <ul class="message-list">
+                <a href="convo.html">
+                <li class="message-item">
+                    <img src="user1.jpg" alt="User 1" class="message-avatar">
+                    <div class="message-content">
+                        <div class="message-sender">Sofia Francisco</div>
+                        <div class="message-preview">HAHAHA YOU'RE FUNNY!</div>
+                    </div>
+                    <div class="timestamp">1:30 PM</div>
+                </li>
+                </a>
+                <li class="message-item">
+                    <a href="convo.html">
+                    <img src="user2.jpg" alt="User 2" class="message-avatar">
+                    <div class="message-content">
+                        <div class="message-sender">Jerica San Juann</div>
+                        <div class="message-preview">Can we meet later today?</div>
+                    </div>
+                    <div class="timestamp">3:00PM</div>
+                </li>
+            </a>
+                <li class="message-item">
+                    <a href="convo.html">
+                    <img src="user3.jpg" alt="User 1" class="message-avatar">
+                    <div class="message-content">
+                        <div class="message-sender">Shaina Santos</div>
+                        <div class="message-preview">Hey, how's it going?</div>
+                    </div>
+                    <div class="timestamp">3:30PM</div>
+                </li>
+            </a>
+                <li class="message-item">
+                    <a href="convo.html">
+                    <img src="user4.jpg" alt="User 1" class="message-avatar">
+                    <div class="message-content">
+                        <div class="message-sender">Cathy Roxas</div>
+                        <div class="message-preview">How old are you?</div>
+                    </div>
+                    <div class="timestamp">4:30 PM</div>
+                </li>
+            </a>
+                <li class="message-item">
+                    <a href="convo.html">
+                    <img src="user5.jpg" alt="User 1" class="message-avatar">
+                    <div class="message-content">
+                        <div class="message-sender">Sweet Velasquez</div>
+                        <div class="message-preview">How's Knight?</div>
+                    </div>
+                    <div class="timestamp">5:00 PM</div>
+                </li>
+            </a>
+                <li class="message-item">
+                    <a href="convo.html">
+                    <img src="user6.jpg" alt="User 1" class="message-avatar">
+                    <div class="message-content">
+                        <div class="message-sender">Elli Montero</div>
+                        <div class="message-preview">Are you free tomorrow?</div>
+                    </div>
+                    <div class="timestamp">Yesterday</div>
+                </li>
+            </ul>
+        </a>
+            <div class="button-container">
+                <button class="button matches-button">Matches</button>
+                <button class="button friends-button">Friends</button>
+            </div>
+    
+        </main>
+    </div>
+</div>
+
+</body>
+
+</html>

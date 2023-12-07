@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 0 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+        }
+
+        .back-arrow {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .game-icon {
+            cursor: pointer;
+            margin-left: 25%;
+        }
+
+        .star-icon {
+            cursor: pointer;
+            margin-right: -5%;
+        }
+
+        .container {
+            border: 2px solid #dedede;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 18%;
+            margin-bottom: -15%;
+            max-width: 60%;
+        }
+
+        .darker {
+            border-color: #cccccc;
+            background-color: #0583F2;
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 40%;
+            margin-bottom: 2%;
+            max-width: 60%;
+        }
+
+        .photo2 {
+            margin-top: 20%;
+        }
+
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container img {
+            float: left;
+            max-width: 60px;
+            width: 100%;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .container img.right {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+       .icons-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-top: 2px solid #ffffff;
+        }
+
+        .icon {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+
+        .message-box {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #dedede;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .send-button {
+            cursor: pointer;
+            background-color: #0583F2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>
+        <span class="back-arrow" onclick="goBack()"><img src="back icon.png" class="icon"></span>
+        Sofia Francisco
+        <span class="game-icon"><img src="game icon.png" class="icon"></span>
+        <span class="star-icon"><img src="star icon.png" class="icon"></span>
+    </h2>
+
+    <div class="darker">
+        <p>Hey! I'm Russel. It's nice to meet you too!</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <p>Hi, Russel! I'm Sofia. Nice to meet you!</p>
+    </div>
+    <span class="photo2"><img src="sofia.jpeg" alt="Avatar" style="width:15%; border-radius: 50%;"></span>
+
+    <br>
+    <br>
+
+    <div class="darker">
+        <p>U look like someone I know</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <p>really? who?</p>
+    </div>
+    <span class="photo2"><img src="sofia.jpeg" alt="Avatar" style="width:15%; border-radius: 50%;"></span>
+
+    <br>
+    <br>
+
+    <div class="darker">
+        <p>Someone I really want to spend my future with.</p>
+    </div>
+
+    <BR>
+    <div class="container">
+        <p>HAHAHA YOU'RE FUNNY!</p>
+    </div>
+    <span class="photo2"><img src="sofia.jpeg" alt="Avatar" style="width:15%; border-radius: 50%;"></span>
+
+    <div class="icons-container">
+        <span class="icon"><img src="cam.png" class="icon"></span>
+        <span class="icon"><img src="photo.png" class="icon"></span>
+        <input type="text" class="message-box" placeholder="Type a message..">
+        <button class="send-button">Send </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>
